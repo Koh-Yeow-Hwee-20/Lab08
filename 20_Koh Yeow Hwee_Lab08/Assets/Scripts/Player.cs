@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public float speed;
     public float maxY;
     Rigidbody PlayerRigidbody;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
         transform.position = pos;
     }
 
+    //Lose Scene
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Obstacle")
