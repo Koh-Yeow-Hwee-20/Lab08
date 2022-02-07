@@ -220,6 +220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1195695139, guid: 16d5b2ebf4f744dca99b6e63dd7e67fd, type: 3}
+      propertyPath: maxY
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 366644907494350603, guid: 16d5b2ebf4f744dca99b6e63dd7e67fd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,5 +585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560b66c2247fc472885da0a8185c8c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnObject: {fileID: 3441854745376264150, guid: 0cebb89d33e7e4f4895f29634533d760,
-    type: 3}
+  SpawnObject:
+  - {fileID: 3441854745376264150, guid: 0cebb89d33e7e4f4895f29634533d760, type: 3}
+  - {fileID: 2149304043724922301, guid: 2c87c383a3e8d429f989c38cfe628f7c, type: 3}
