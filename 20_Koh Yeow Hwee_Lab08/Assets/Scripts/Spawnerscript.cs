@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawnerscript : MonoBehaviour
 {
@@ -15,14 +16,6 @@ public class Spawnerscript : MonoBehaviour
         InvokeRepeating("SpawnObjects", 1, 1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-
-    }
-
     void SpawnObjects()
     {
         //Randomly spawn other prefabs
@@ -31,4 +24,5 @@ public class Spawnerscript : MonoBehaviour
         this.transform.position = new Vector3(transform.position.x, PositionY, transform.position.z);
         Instantiate(SpawnObject[RandomSpawn], transform.position, transform.rotation);
     }
+
 }
